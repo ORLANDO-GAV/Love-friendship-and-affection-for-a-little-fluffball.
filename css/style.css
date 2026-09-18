@@ -573,6 +573,50 @@ button {
 
 /* ---------- Responsive: tablet / escritorio ---------- */
 
+@media (max-width: 639px) {
+  .stage {
+    min-height: 100dvh;
+    align-items: flex-start;
+    padding: 10px 8px;
+  }
+
+  .letter-screen {
+    max-width: none;
+  }
+
+  .card {
+    width: 100%;
+    min-height: calc(100dvh - 20px);
+    border-radius: 18px;
+    padding: 28px 14px 18px;
+  }
+
+  .photo-frame {
+    max-width: none;
+    width: min(100%, 360px);
+    margin-top: 6px;
+  }
+
+  .title {
+    margin-top: 12px;
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+  }
+
+  .reading {
+    max-height: calc(100dvh - 300px);
+    min-height: 220px;
+    padding-right: 8px;
+  }
+
+  .controls {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: 640px) {
   .letter-screen {
     max-width: 500px;
