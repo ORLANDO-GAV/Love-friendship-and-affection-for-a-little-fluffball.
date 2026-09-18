@@ -573,19 +573,58 @@ button {
 
 /* ---------- Responsive: tablet / escritorio ---------- */
 
-@media (max-width: 639px) {
+@media (max-width: 768px) {
   .stage {
     min-height: 100dvh;
     align-items: flex-start;
     padding: 0;
   }
 
+  .welcome-screen {
+    max-width: none;
+    min-height: 100dvh;
+    justify-content: center;
+    gap: 28px;
+    padding: 24px;
+  }
+
+  .envelope {
+    width: min(82vw, 360px);
+    height: auto;
+    aspect-ratio: 250 / 172;
+    margin: 0;
+  }
+
+  .envelope-flap {
+    height: 57%;
+  }
+
+  .envelope-heart {
+    top: 42%;
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+  }
+
+  .btn-open {
+    min-height: 58px;
+    padding: 16px 38px;
+    font-size: 1.25rem;
+  }
+
   .letter-screen {
     max-width: none;
+    width: 100%;
   }
 
   .card {
     width: 100vw;
+    max-width: none;
     height: 100dvh;
     min-height: 100dvh;
     border-radius: 0;
@@ -671,7 +710,6 @@ button {
 [hidden] {
   display: none !important;
 }
-
 
 [hidden] {
   display: none !important;
